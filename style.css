@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #ccc;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.container {
+    background-color: white;
+    width: 600px;
+    margin: 50px auto;
+    height: 580px;
+
+    padding: 15px;
+    box-shadow: 10px black;
+
+    border-radius: 10px;
+    box-shadow: 10px black;
+}
+
+form {
+    display: grid;
+    gap: 20px 20px;
+    grid-template-columns: auto auto;
+}
+
+.grid-items {
+    display: flex;
+
+    border-radius: 3px;
+    flex-direction: column;
+}
+
+#firstname,
+#lastname,
+#email,
+#jobrole,
+#address,
+#city,
+#pincode,
+#date,
+#file {
+    margin: 10px 0px;
+    padding: 5px;
+    width: 100%;
+}
+
+.item-5 {
+    grid-column: 1/3;
+    width: 100%;
+}
+
+#file {
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.item-10 {
+    text-align: end;
+    margin: 5px;
+
+}
+
+.item-10 button {
+    font-size: 15px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    padding: 7px;
+    transition: 0.3s ease-in;
+}
+
+.item-10 button:hover {
+    background-color: #ccc;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+    cursor: pointer;
+    color: black;
+    border: 2px solid red;
+}
+
+@media screen and (max-width:680px) {
+    .container {
+        background-color: white;
+        width: 400px;
+        margin: 50px auto;
+        height: auto;
+
+        padding: 15px;
+        box-shadow: 10px black;
+
+        border-radius: 10px;
+        box-shadow: 10px black;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+
+    form {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: auto;
+    }
+
+    .grid-items {
+        display: flex;
+        grid-column: 1/span 3;
+        border-radius: 3px;
+        flex-direction: column;
+    }
+}
